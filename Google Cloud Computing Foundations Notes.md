@@ -1,184 +1,149 @@
-📝 Google Cloud Concepts and Notes
+# 📝 Google Cloud Concepts and Notes
 
-☁️ What is Cloud Computing?
+## ☁️ What is Cloud Computing?
 
-Definition:Cloud computing is a method of using technological resources virtually and on-demand via the internet. It allows users to access and manage resources like servers, storage, and applications without worrying about the physical infrastructure.
+**Definition:**\
+Cloud computing is a method of using technological resources virtually and on-demand via the internet. It allows users to access and manage resources like servers, storage, and applications without worrying about the physical infrastructure.
 
-Key Characteristics:
+### Key Characteristics:
 
-On-demand Self-service: Instant availability of resources as needed.
+- **On-demand Self-service**: Instant availability of resources as needed.
+- **Broad Network Access**: Accessible from anywhere with internet.
+- **Resource Pooling**: Shared resources among multiple users.
+- **Rapid Elasticity**: Quickly scalable according to demand.
+- **Measured Service**: Payment based only on resources used.
 
-Broad Network Access: Accessible from anywhere with internet.
+---
 
-Resource Pooling: Shared resources among multiple users.
+## 🛠️ Differences Between Traditional and Cloud Architecture
 
-Rapid Elasticity: Quickly scalable according to demand.
+| Traditional Architecture    | Cloud Computing                  |
+| --------------------------- | -------------------------------- |
+| Dedicated physical servers  | Virtualized and shared resources |
+| Limited scalability         | Rapid and flexible scalability   |
+| Intensive manual management | Automated management             |
+| High initial costs          | Variable costs based on usage    |
 
-Measured Service: Payment based only on resources used.
+Google employs a **container-based architecture** to facilitate scalability and reduce complexity.
 
-🛠️ Differences Between Traditional and Cloud Architecture
+---
 
-Traditional Architecture
+## 🌍 Google's Data Centers
 
-Cloud Computing
+- First to achieve **ISO 14001** certification (environmental management).
+- Notable Example: **Finland**, recognized for efficiency and sustainability.
 
-Dedicated physical servers
+---
 
-Virtualized and shared resources
+## 🔧 Cloud Service Models
 
-Limited scalability
+### Infrastructure as a Service (IaaS)
 
-Rapid and flexible scalability
+- Basic computing resources (servers, storage, networks).
+- Examples: Google Compute Engine.
 
-Intensive manual management
+### Platform as a Service (PaaS)
 
-Automated management
+- Pre-configured infrastructure for developing and running applications.
+- Examples: Google App Engine, Cloud Run.
 
-High initial costs
+### Software as a Service (SaaS)
 
-Variable costs based on usage
+- Complete applications available online.
+- Examples: Gmail, Google Docs, Google Drive (Workspace).
 
-Google employs a container-based architecture to facilitate scalability and reduce complexity.
+---
 
-🌍 Google's Data Centers
+## 📐 Google Cloud Infrastructure
 
-First to achieve ISO 14001 certification (environmental management).
+### Primary Layers:
 
-Notable Example: Finland, recognized for efficiency and sustainability.
+1. **Networking and Security:**
 
-🔧 Cloud Service Models
+   - Foundation supporting all infrastructure and applications.
 
-Infrastructure as a Service (IaaS)
+2. **Compute and Storage:**
 
-Basic computing resources (servers, storage, networks).
+   - Decoupling allows independent scaling.
 
-Examples: Google Compute Engine.
+   - Services:
 
-Platform as a Service (PaaS)
+     - **Compute Engine** (virtual machines)
+     - **Google Kubernetes Engine** (container orchestration)
+     - **App Engine** (managed platform)
+     - **Cloud Run** and **Cloud Functions** (serverless computing)
 
-Pre-configured infrastructure for developing and running applications.
+   - Managed Storage:
 
-Examples: Google App Engine, Cloud Run.
+     - **Cloud Storage**
+     - **Cloud SQL and Spanner** (relational databases)
+     - **Bigtable and Firestore** (NoSQL databases)
 
-Software as a Service (SaaS)
+3. **Big Data and Machine Learning:**
 
-Complete applications available online.
+   - Tools for data ingestion, storage, processing, and analysis.
+   - Key Services:
+     - **BigQuery** (real-time data analytics)
+     - **Dataflow** (data processing and pipelines)
+     - **Dataproc** (Hadoop and Spark processing)
+     - **Pub/Sub** (real-time messaging)
+     - **Looker** (visualization)
+     - **AutoML and Vertex AI** (managed artificial intelligence and machine learning)
 
-Examples: Gmail, Google Docs, Google Drive (Workspace).
+---
 
-📐 Google Cloud Infrastructure
+## 🗺️ Google Cloud Geography and Distribution
 
-Primary Layers:
+- **Regions and Zones:**
 
-Networking and Security:
+  - Region: Independent geographic area with several zones.
+  - Zone: Specific area where resources are deployed.
+  - Example: Region `europe-west2` (London) has 3 zones.
 
-Foundation supporting all infrastructure and applications.
+- **Multi-region Configurations:**
 
-Compute and Storage:
+  - Improved availability and resilience.
+  - Example: **Spanner** database with multi-region replication (Netherlands, Belgium).
 
-Decoupling allows independent scaling.
+- **Current Distribution:** 121 zones across 40 global regions.
 
-Services:
+- Constant updates available at [Google Cloud Locations](https://cloud.google.com/about/locations).
 
-Compute Engine (virtual machines)
+---
 
-Google Kubernetes Engine (container orchestration)
+## ⚙️ Serverless Computing
 
-App Engine (managed platform)
+- **Definition:**
 
-Cloud Run and Cloud Functions (serverless computing)
+  - Enables developing applications without managing infrastructure.
 
-Managed Storage:
+- **Google Services:**
 
-Cloud Storage
+  - **Cloud Run** (container-based microservices applications).
+  - **Cloud Functions** (event-driven code execution).
 
-Cloud SQL and Spanner (relational databases)
+- **Advantages:**
 
-Bigtable and Firestore (NoSQL databases)
+  - Focus on code development.
+  - Pay-as-you-go pricing.
 
-Big Data and Machine Learning:
+---
 
-Tools for data ingestion, storage, processing, and analysis.
+## 📌 Summary of Key Google Cloud Services
 
-Key Services:
+| Category    | Services                                                 |
+| ----------- | -------------------------------------------------------- |
+| 🖥️ Compute | Compute Engine, Kubernetes Engine, App Engine, Cloud Run |
+| 💾 Storage  | Cloud Storage, Cloud SQL, Spanner, Bigtable, Firestore   |
+| 📊 Big Data | BigQuery, Dataflow, Dataproc, Pub/Sub, Looker            |
+| 🤖 ML & AI  | AutoML, Vertex AI                                        |
 
-BigQuery (real-time data analytics)
+---
 
-Dataflow (data processing and pipelines)
+## 🔗 Useful Links
 
-Dataproc (Hadoop and Spark processing)
-
-Pub/Sub (real-time messaging)
-
-Looker (visualization)
-
-AutoML and Vertex AI (managed artificial intelligence and machine learning)
-
-🗺️ Google Cloud Geography and Distribution
-
-Regions and Zones:
-
-Region: Independent geographic area with several zones.
-
-Zone: Specific area where resources are deployed.
-
-Example: Region europe-west2 (London) has 3 zones.
-
-Multi-region Configurations:
-
-Improved availability and resilience.
-
-Example: Spanner database with multi-region replication (Netherlands, Belgium).
-
-Current Distribution: 121 zones across 40 global regions.
-
-Constant updates available at Google Cloud Locations.
-
-⚙️ Serverless Computing
-
-Definition:
-
-Enables developing applications without managing infrastructure.
-
-Google Services:
-
-Cloud Run (container-based microservices applications).
-
-Cloud Functions (event-driven code execution).
-
-Advantages:
-
-Focus on code development.
-
-Pay-as-you-go pricing.
-
-📌 Summary of Key Google Cloud Services
-
-Category
-
-Services
-
-🖥️ Compute
-
-Compute Engine, Kubernetes Engine, App Engine, Cloud Run
-
-💾 Storage
-
-Cloud Storage, Cloud SQL, Spanner, Bigtable, Firestore
-
-📊 Big Data
-
-BigQuery, Dataflow, Dataproc, Pub/Sub, Looker
-
-🤖 ML & AI
-
-AutoML, Vertex AI
-
-🔗 Useful Links
-
-Google Cloud Platform
-
-Data Center Locations
+- a[Google Cloud Platform](https://cloud.google.com/)
+- [Data Center Locations](https://cloud.google.com/about/locations)
 
 These notes will help you efficiently and clearly review key Google Cloud concepts.
 
